@@ -32,7 +32,7 @@ Choose the version for your operating system (Windows, macOS, or Linux) and foll
 ---
 
 ## 2️⃣ Open a Terminal or Anaconda Prompt
-> 🤯 If you don't know what's a **terminal**, check out this short intro:  **[What is the terminal?](https://www.freecodecamp.org/news/what-is-the-command-line-interface-beginners-guide/)**  
+> 🤯 If you don't know what's a **terminal**, check out this short intro:  **[Command line for beginners](https://www.freecodecamp.org/news/command-line-for-beginners/)**  
 
 Once Conda is installed:
 
