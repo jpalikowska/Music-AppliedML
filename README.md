@@ -4,7 +4,7 @@ Welcome! This repo contains weekly materials, notebooks, and exercises for the c
 
 ## 🗓️ Weekly Materials
 
-- [Week 1: Introduction](weeks/week01_intro/)
+- [Week 1: Introduction](weeks/week1_intro/)
 - *(more coming soon!)*
 
 ## 📚 Other Resources
