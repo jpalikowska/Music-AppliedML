@@ -74,6 +74,7 @@ Now you need to install a text editor or an integrated development environment (
 - Beginner-friendly
 - Works well with both scripts and notebooks
 - Has great Python support
+  
 👉 Download: https://code.visualstudio.com/
 
 After installing VS Code:
@@ -81,7 +82,7 @@ After installing VS Code:
 - Open it
 - Install the Python extension (when prompted or via the Extensions tab)
 
-> ⚠️ **Note:** You can use any other editor if you prefer.
+> ⚠️ **Note:** You can use any other editor if you prefer (and know what you are doing).
 
 --- 
 
