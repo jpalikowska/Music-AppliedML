@@ -24,7 +24,7 @@ Choose a reasonable **two-dimensional projection** of the data (e.g. columns "Al
 
 ## Implement OLS classifier
 
-Implement a OLS classifier **with intercept** (e.g. the bias $b$ value may be non-zero) as a **child class** of `LinearBinaryClassification` class implemented in the lecture. The class should contain a method `fit(X,Y)`, which fits the parameters of the linear classifier using the theoretical solutions of the OLS problem.
+Implement an OLS classifier **with intercept** (i.e., the bias $b$ value may be non-zero) as a **child class** of `LinearBinaryClassification` class implemented in the lecture. The class should contain a method `fit(X,Y)`, which fits the parameters of the linear classifier using the theoretical solutions of the OLS problem.
 
 #### Two-dimensional projection of the data
 
