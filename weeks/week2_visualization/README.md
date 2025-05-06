@@ -11,6 +11,6 @@
 ### 📂 Files
 - [📘 Notebook: Visualization and Data Processing](matplotlib_pandas.ipynb)
 - [📝 Homework assignment](week2_hw_covid.md)
-- [📘 Homework solution](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [📘 Homework solution](week2_hw_covid.ipynb)
 
 ### 📅 Date: April 30
