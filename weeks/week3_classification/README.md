@@ -15,6 +15,6 @@
 ### 📂 Files
 - [📘 Notebook: Linear classification setup](lin_classification_setup.ipynb)
 - [📝 Homework assignment](week3_hw_wine.md)
-- [📘 Homework solution](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [📘 Homework solution](week3_hw_wine.ipynb)
 
 ### 📅 Date: May 7
