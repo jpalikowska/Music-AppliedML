@@ -14,6 +14,6 @@
 ### 📂 Files
 - [📘 Notebook: Gradient descent](gradient_descent.ipynb)
 - [📝 Homework assignment](week4_hw_sgd.md)
-- [📘 Homework solution](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [📘 Homework solution](week4_hw_sgd.ipynb)
 
 ### 📅 Date: May 14
