@@ -16,23 +16,16 @@ In this task, you will implement **Lasso regression** and study its behavior on 
 ### Task 1: Implement Linear Regression
 
 - Create a `LinearRegression` class.
-- It should behave similarly to `LinearBinaryClassification`, but calling the class instance should return the decision function value
-
-  $$
-  h(x) = \langle w, x \rangle + b
-  $$
-  instead of the classifier's binary decision.
-
+- It should behave similarly to `LinearBinaryClassification`, but calling the class instance should return the decision function value\
+$$h(x) = \langle w, x \rangle + b$$\
+ instead of the classifier's binary decision.
 - Implement training with **gradient descent (GD)**.
 
 ### Task 2: Implement Lasso Regression
 
 - Implement a `LassoRegression` class that adds an **$\ell^1$ regularization term** to linear regression.
-- As in the lecture, you may assume:
-
-  $$
-  \frac{\partial}{\partial w_i} |w_i| = \text{sign}(w_i)
-  $$
+- As in the lecture, you may assume:\
+  $$\frac{\partial}{\partial w_i} |w_i| = \text{sign}(w_i)$$
 
 ### Task 3: Explore Regularization Effects
 
@@ -49,7 +42,9 @@ In this task, you will implement **Lasso regression** and study its behavior on 
 - Plot **each coefficient in $w$ as a function of $\lambda$**  
 (similar to the plot below):
 
-![](images/coefs.svg)
+<p align="center">
+  <img width="800" src=images/coefs.svg>
+</p>
 
 > 📌 In your notebook, **include the legend** to show which line corresponds to which feature (here it's hidden for the suspence).
 
@@ -65,6 +60,8 @@ In this task, you will implement **Lasso regression** and study its behavior on 
 
 Visualize the final active coefficients (as in the example below):
 
-![](images/coef_vals.svg)
+<p align="center">
+  <img width="600" src=images/coef_vals.svg>
+</p>
 
 > 📌 Include **variable names on the x-axis** in your plot.
