@@ -8,6 +8,7 @@ Welcome! This repo contains weekly materials, notebooks, and exercises for the c
 - [Week 2: Visualization](weeks/week2_visualization/)
 - [Week 3: Linear Binary Classification](weeks/week3_classification/)
 - [Week 4: Gradient Descent](weeks/week4_gd/)
+- [Week 5: Regularization](weeks/week5_regularization/)
 - *(more coming soon!)*
 
 ## 📚 Other Resources
