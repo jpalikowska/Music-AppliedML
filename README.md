@@ -9,6 +9,7 @@ Welcome! This repo contains weekly materials, notebooks, and exercises for the c
 - [Week 3: Linear Binary Classification](weeks/week3_classification/)
 - [Week 4: Gradient Descent](weeks/week4_gd/)
 - [Week 5: Regularization](weeks/week5_regularization/)
+- [Week 6: Generalized Linear Models](weeks/week6_glm/)
 - *(more coming soon!)*
 
 ## 📚 Other Resources
