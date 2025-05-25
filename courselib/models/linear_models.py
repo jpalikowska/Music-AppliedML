@@ -34,7 +34,7 @@ class LinearBinaryClassification(TrainableModel):
         self.w = np.array(w, dtype=float)
         self.b = np.array(b, dtype=float)
         self.class_labels = [min(class_labels),max(class_labels)]
-        self.threshold = (self.class_labels[1] - self.class_labels[0])/2.
+        self.threshold = self.class_labels[0] + (self.class_labels[1] - self.class_labels[0])/2.
 
     def loss_grad(self, X, y):
         residual = self.decision_function(X) - y
@@ -63,9 +63,9 @@ class RidgeClassifier(LinearBinaryClassification):
     def loss_grad(self, X,Y):
         """Loss gradient"""
         residual = self.decision_function(X) - Y
-        w_grad = X.T@residual/X.shape[0] + 2*self.lam*self.w 
-        b_grad = np.mean(residual, axis=0)
-        return w_grad, b_grad
+        grad_w = X.T@residual/X.shape[0] + 2*self.lam*self.w 
+        grad_b = np.mean(residual, axis=0)
+        return {"w": grad_w, "b": grad_b}
     
 
 class LassoClassifier(LinearBinaryClassification):
@@ -79,9 +79,9 @@ class LassoClassifier(LinearBinaryClassification):
     def loss_grad(self, X,Y):
         """Loss gradient"""
         residual = self.decision_function(X) - Y
-        w_grad = X.T@residual/X.shape[0] + self.lam*np.sign(self.w)
-        b_grad = np.mean(residual, axis=0)
-        return w_grad, b_grad
-    
+        grad_w = X.T@residual/X.shape[0] + self.lam*np.sign(self.w)
+        grad_b = np.mean(residual, axis=0)
+        return {"w": grad_w, "b": grad_b}
+
 
     
