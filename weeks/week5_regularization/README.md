@@ -13,6 +13,6 @@
 ### 📂 Files
 - [📘 Notebook: Regularization](regularization.ipynb)
 - [📝 Homework assignment](week5_hw_lasso.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week5_hw_lasso.ipynb)
 
 ### 📅 Date: May 21
