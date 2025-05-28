@@ -30,14 +30,8 @@ Apply **min-max normalization** to all numerical features to ensure stable train
 
 Poisson regression is a GLM for **count data** (such as bike rental count in this task). It uses:
 
-- **Exponential activation**:
-  $$
-  h(x) = e^{\langle w, x \rangle + b}
-  $$
-- **Poisson loss function**:
-  $$
-  \mathcal{L}(y, \hat{y}) = \hat{y} - y \log \hat{y}
-  $$
+- **Exponential activation**: $h(x) = e^{\langle w, x \rangle + b}$
+- **Poisson loss function**: $ \mathcal{L}(y, \hat{y}) = \hat{y} - y \log \hat{y} $
 
 
 ## ✅ Task 1: Implement `PoissonRegression`
