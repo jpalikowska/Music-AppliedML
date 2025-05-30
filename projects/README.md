@@ -81,5 +81,5 @@ See [Tips for Publishing Research Code](https://github.com/paperswithcode/releas
 
 - ✅ Code: clean, modular, runs end-to-end
 - ✅ README: includes overview, usage, and dependencies
-- ✅ Report: max 2-page PDF (LaTeX)
+- ✅ Report: max 3-page PDF (LaTeX)
 - ✅ Figures: learning curves, accuracy plots, decision boundaries, confusion matrices, etc.
