@@ -1,6 +1,6 @@
 # Project Specification and Evaluation Criteria
 
-This document outlines the expectations, requirements, and grading criteria for the final course projects. Projects may be either **dataset-focused** or **model-focused** (see below), and students will work on them over a two-week period.
+This document outlines the expectations, requirements, and grading criteria for the final course projects. Projects may be either **dataset-focused** or **model-focused** (see below). Students will complete the project over a **two-week period**, working in groups of **two**.
 
 ## ✅ General Requirements
 
