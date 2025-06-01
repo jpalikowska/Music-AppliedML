@@ -18,7 +18,7 @@ Here we'll discuss the homework (after you had a week to work on it yourself), y
 
 
 🏆 Evaluation:
-- **Project** at the end of the course (possibly in groups).
+- **Project** at the end of the course (completed **in groups of two**).
 - Homeworks are **not** graded.
 
 💬 Communication:
