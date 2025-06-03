@@ -10,6 +10,7 @@ Welcome! This repo contains weekly materials, notebooks, and exercises for the c
 - [Week 4: Gradient Descent](weeks/week4_gd/)
 - [Week 5: Regularization](weeks/week5_regularization/)
 - [Week 6: Generalized Linear Models](weeks/week6_glm/)
+- [Week 7: Support Vector Machines](weeks/week7_svm/)
 - *(more coming soon!)*
 
 ## 📚 Other Resources
