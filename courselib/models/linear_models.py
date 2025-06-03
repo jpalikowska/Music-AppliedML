@@ -29,7 +29,7 @@ class LinearRegression(TrainableModel):
 class LinearBinaryClassification(TrainableModel):
     """Linear binary classification model."""
 
-    def __init__(self, w, b, optimizer,class_labels=[-1,1]):
+    def __init__(self, w, b, optimizer, class_labels=[-1,1]):
         super().__init__(optimizer)
         self.w = np.array(w, dtype=float)
         self.b = np.array(b, dtype=float)

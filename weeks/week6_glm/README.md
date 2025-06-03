@@ -13,6 +13,6 @@
 - [📘 Notebook: courselib](courselib_intro.ipynb)
 - [📘 Notebook: GLMs](glm.ipynb)
 - [📝 Homework assignment](week6_hw_poisson.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week6_hw_poisson.ipynb)
 
 ### 📅 Date: May 28
