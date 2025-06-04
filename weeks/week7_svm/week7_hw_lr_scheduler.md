@@ -29,7 +29,7 @@ def decay_schedule(step, initial_lr=0.1, decay_rate=0.05):
 
 In this assignment, you'll train your SVM on **synthetic 2D data** generated from two **well-separated Gaussian distributions**. Generate such syntetic dataset, which could look e.g. as follows:
 
-![](images/data.png)
+<img src="images/data.png" alt="Dataset image" width="600"/>
 
 
 This ensures:
