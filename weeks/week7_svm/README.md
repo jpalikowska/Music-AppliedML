@@ -11,6 +11,6 @@
 ### 📂 Files
 - [📘 Notebook: Linear SVM](linear_svm.ipynb)
 - [📝 Homework assignment](week7_hw_lr_scheduler.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week7_hw_lr_scheduler.ipynb)
 
 ### 📅 Date: June 4

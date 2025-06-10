@@ -22,9 +22,23 @@ class Optimizer:
 
 class GDOptimizer(Optimizer):
     """
-    Gradient descent optimizer.
+    Gradient descent optimizer with optional learning rate schedule.
+
+    Parameters:
+    - learning_rate (float): Initial learning rate
+    - schedule_fn (callable): Function(step) → new_learning_rate
     """
+
+    def __init__(self, learning_rate=0.01, schedule_fn=None):
+        super().__init__(learning_rate)
+        self.schedule_fn = schedule_fn
+        self.step = 0
+
     def update(self, params, grads):
+        if self.schedule_fn is not None:
+            self.step += 1
+            self.learning_rate = self.schedule_fn(self.step)
+
         for key in params:
-            #params[key][:] -= self.learning_rate*grads[key]
             np.subtract(params[key], self.learning_rate * grads[key], out=params[key])
+
