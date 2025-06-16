@@ -13,6 +13,6 @@
 ### 📂 Files
 - [📘 Notebook: Kernel SVM](kernel_svm.ipynb)
 - [📝 Homework assignment](week8_hw_spectrum_kernel.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week8_hw_spectrum_kernel.ipynb)
 
 ### 📅 Date: June 11
