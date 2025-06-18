@@ -17,7 +17,7 @@ https://archive.ics.uci.edu/ml/machine-learning-databases/letter-recognition/let
 The softmax regression model outputs a probability distribution over $K$ classes using the **softmax activation function**:
 
 $$
-h(x) = \operatorname{softmax}(W^\top x + B) \in \mathbb{R}^K
+h(x) = \text{softmax}(W^\top x + B) \in \mathbb{R}^K
 $$
 
 Component-wise, this is:
