@@ -13,6 +13,7 @@ Welcome! This repo contains weekly materials, notebooks, and exercises for the c
 - [Week 7: Support Vector Machines](weeks/week7_svm/)
 - [Week 8: Kernel SVM](weeks/week8_kernel_svm/)
 - [Week 9: Multiclass Models](weeks/week9_multiclass/)
+- [Week 10: Neural Networks](weeks/week10_nns/)
 - *(more coming soon!)*
 
 ## 📚 Other Resources
