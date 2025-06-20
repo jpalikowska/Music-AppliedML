@@ -19,14 +19,17 @@ X, Y = fetch_openml("mnist_784", version=1, return_X_y=True, as_frame=False)
 Add the following components to your codebase:
 
 - **`Sigmoid` activation**
+  
   $$
   \sigma(x) = \frac{1}{1 + e^{-x}}, \quad \sigma'(x) = \sigma(x)(1 - \sigma(x))
   $$
 
 - **`CrossEntropy` loss** (for one-hot labels)
-  $$
-  \mathcal{L}(Y, \hat{Y}) = - \sum_k Y[k] \log(\hat{Y}[k]),
-  $$
+  
+$$
+\mathcal{L}(Y, \hat{Y}) = - \sum_k Y[k] \cdot \log(\hat{Y}[k]),
+$$
+  
 
 These should be implemented as classes, similar to `ReLU` and `L2`.
 
