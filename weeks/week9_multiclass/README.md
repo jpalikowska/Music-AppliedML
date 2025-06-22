@@ -11,6 +11,6 @@
 ### 📂 Files
 - [📘 Notebook: Multiclass Models](multiclass.ipynb)
 - [📝 Homework assignment](week9_hw_softmax.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week9_hw_softmax.ipynb)
 
 ### 📅 Date: June 18
