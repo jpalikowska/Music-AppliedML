@@ -12,6 +12,6 @@
 ### 📂 Files
 - [📘 Notebook: Neural Networks](neural_networks.ipynb)
 - [📝 Homework assignment](week10_hw_mnist.md)
-- [📘 Homework solution]()
+- [📘 Homework solution](week10_hw_mnist.ipynb)
 
 ### 📅 Date: June 25
