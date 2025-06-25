@@ -1,11 +1,12 @@
 # Week 10 – Neural Networks
 
 ### 🧠 Topics
-- **Multiclass models:**
-    - **Classification:** One-vs-Rest (OvR) and One-vs-One (OvO) strategies
-    - Multioutput **regression**
-    - Implementation of multiclass linear (OLS) classification
-- **Homework:** Softmax Regression on Letter Recognition Dataset 🔠
+- **Neural Networks:**
+    - Introduction: neurons, layers, architectures
+    - **Backpropagation** algorithm
+    - Implementation of **Multi-Layer Perceptron (MLP)**
+    - Challenges of NNs training
+- **Homework:** MNIST Classification with MLP 🔢
 
 
 ### 📂 Files
