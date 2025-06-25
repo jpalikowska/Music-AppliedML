@@ -29,9 +29,14 @@ Add the following components to your codebase:
 $$
 \mathcal{L}(Y, \hat{Y}) = - \sum_k Y[k] \cdot \log(\hat{Y}[k]),
 $$
+
+- **`Softmax` activation** (see previous week's homework)
   
 
 These should be implemented as classes, similar to `ReLU` and `L2`.
+
+> **Note:** Since the gradients of **softmax** and **cross-entropy** are unstable when implemented separately, your implementation should only support using **softmax activation** together with **cross-entropy loss**.
+
 
 
 ## Task 2: Experiment with Architectures & Training
