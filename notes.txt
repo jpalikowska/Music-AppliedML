@@ -1,0 +1,4 @@
+For BinaryKernelSVM verison OvO and OvR over 40 mfcc features:
+
+1. 3s file (trained OvO) didn't give better results than 30s file.
+2. After scaling the mfcc features and tunning sigma accuracy around 70%.
