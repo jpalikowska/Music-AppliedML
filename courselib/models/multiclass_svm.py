@@ -63,7 +63,7 @@ class KernelMulticlassOvR:
             Y_encoded = np.where(Y == cls, 1, -1)
             preds = np.sign(model(X))
             acc = binary_accuracy(preds, Y_encoded)
-            print(f"  - Class '{cls}': {acc:.4f} (Support vectors: {len(model.sv_y)})")
+            print(f"  - Class '{cls}': {acc:.4f}")
 
     def evaluate_accuracy(self, X, Y):
         """
@@ -138,7 +138,7 @@ class KernelMulticlassOvO:
             Y_bin = np.where(Y_pair == class_a, 1, -1)
             preds = np.sign(model(X_pair))
             acc = binary_accuracy(preds, Y_bin)
-            print(f"  - Classifier '{class_a}' vs '{class_b}': {acc:.4f} (Support vectors: {len(model.sv_y)})")
+            print(f"  - Classifier '{class_a}' vs '{class_b}': {acc:.4f}")
 
     def evaluate_accuracy(self, X, Y):
         """
