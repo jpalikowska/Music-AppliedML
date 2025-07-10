@@ -3,12 +3,10 @@
 This repository contains the official implementation of our **music genre classification** project using machine learning techniques.  
 The project was developed as part of the *Applied Machine Learning* course and makes use of the custom *courselib* library created during lectures.
 
----
 
 ## 📊 Overview
 
-We evaluate and compare the performance of two different models — an SVM with RBF kernel and a Multilayer Perceptron (MLP) neural network —  
-using MFCC-based features extracted from the GTZAN dataset.
+We evaluate and compare the performance of two different models — an SVM with RBF kernel and a Multilayer Perceptron (MLP) neural network —  using MFCC-based features extracted from the GTZAN dataset.
 
 The main objectives of the project are:
 
@@ -16,7 +14,6 @@ The main objectives of the project are:
 - Assess per-genre performance  
 - Investigate feature strengths and limitations  
 
----
 
 ## 📦 Requirements
 
@@ -36,7 +33,6 @@ source test_env/bin/activate        # Linux/macOS
 test_env\Scripts\activate.bat       # Windows
 </code></pre>
 
----
 
 ## 🏋️‍♂️ Training & Evaluation
 
@@ -49,8 +45,6 @@ Simply run all cells to:
 - Train two models: SVM with RBF kernel and a Multilayer Perceptron (MLP)  
 - Evaluate models using accuracy, confusion matrix, and per-genre performance  
 - Analyze feature limitations and genre-specific classification challenges  
-
----
 
 ## ✅ Results
 
