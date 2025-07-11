@@ -33,3 +33,9 @@ def labels_to_numbers(labels, class_names=None):
         class_names = np.unique(labels)
     label_to_number = {label: i for i, label in enumerate(class_names)}
     return np.array([label_to_number[label] for label in labels])
+
+def one_hot_encoding(Y, num_classes=None):
+    Y = np.asarray(Y)
+    if num_classes is None:
+        num_classes = np.max(Y) + 1
+    return np.eye(num_classes)[Y]
