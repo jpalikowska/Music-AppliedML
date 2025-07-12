@@ -50,11 +50,11 @@ def load_wine():
     return df 
 
 def load_music_30_sec():
-    file_name = 'features_30_sec.csv'
+    file_name = 'data/features_30_sec.csv'
     df = load_csv(file_name)
     return df 
 
 def load_music_3_sec():
-    file_name = 'features_3_sec.csv'
+    file_name = 'data/features_3_sec.csv'
     df = load_csv(file_name)
     return df
