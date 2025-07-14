@@ -78,10 +78,34 @@ def confusion_matrix(y_true, y_pred, num_classes=None, plot=True, **kwargs):
         plot_confusion_matrix(cm, **kwargs)
     else:
         return cm
+    
+def plot_learning_curves(metrics_history, figsize=(6, 5)):
+    """
+    Plot learning curves for training and validation metrics.
+    
+    Parameters:
+    - metrics_history: Dictionary containing 'loss', 'val_loss', 'accuracy', 'val_accuracy'.
+    - figsize: Tuple specifying the figure size.
+    """
+    fig, ax = plt.subplots(figsize=figsize)
 
+    ax.plot(range(len(metrics_history['loss'])), metrics_history['loss'], label='Loss')
+    ax.set_ylabel('Loss value')
 
+    ax2 = ax.twinx()
+    
+    # Convert accuracy to percentages if in range [0, 1]
+    accuracy = metrics_history['accuracy']
+    if max(accuracy) <= 1.0:
+        accuracy = [a * 100 for a in accuracy]
 
+    ax2.plot(range(len(accuracy)), accuracy, color='orange', label='Accuracy')
+    ax2.set_ylabel('Accuracy (%)')
 
+    ax.set_xlabel('Epoch')
+    plt.title('Learning curve')
+    plt.grid()
+    plt.show()
 
 
 
