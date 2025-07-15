@@ -93,9 +93,9 @@ Running the notebook allows you to:
 
 We provide pretrained CNN models in the [`pretrained_models`](./pretrained_models/) folder to speed up evaluation and avoid long training times.
 
-All models were trained on the GTZAN dataset using the configuration specified in the **`config_cnn`** dictionary from the notebook.
+All models were trained on the GTZAN dataset using the configuration specified in the `config_cnn` dictionary from the notebook.
 Each model was saved along with its configuration and training metrics for reproducibility.
-The only variation from **`config_cnn`** is the number of training epochs, which is reflected in the filename.
+The only variation from `config_cnn` is the number of training epochs, which is reflected in the filename.
 
 Additionally, the naming convention reflects how `torchvision.transforms` were applied to the dataset:
 
