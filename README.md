@@ -99,8 +99,8 @@ The only variation from `config_cnn` is the number of training epochs, which is 
 
 Additionally, the naming convention reflects how `torchvision.transforms` were applied to the dataset:
 
-- Models **without `separate_transform`** in the filename were trained using a single transform pipeline applied to the entire dataset (both training and test data).
-- The model **with `separate_transform`** in the name was trained using the current notebook setup, where different transforms are applied to the training and test sets.
+- Models **without** `separate_transform` in the filename were trained using a single transform pipeline applied to the entire dataset (both training and test data).
+- The model **with** `separate_transform` in the name was trained using the current notebook setup, where different transforms are applied to the training and test sets.
 
 > The training transform is intentionally stronger and includes augmentations such as horizontal flipping and affine transformations, while the test transform applies only resizing and normalization.  
 > This change was introduced to explore whether separate transforms could improve generalization and accuracy — however, the improvement turned out to be marginal.
