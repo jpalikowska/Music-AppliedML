@@ -106,7 +106,7 @@ class SimpleCNN(nn.Module):
         return Y_true_int, Y_pred_int
     
 def load_SimpleCNN_model(path, device):
-    checkpoint = torch.load(path + ".pth", map_location=device)
+    checkpoint = torch.load(path + ".pth", map_location=device, weights_only=True)
     model = SimpleCNN(checkpoint['config']).to(device)
     model.load_state_dict(checkpoint['model_state_dict'])
     metrics_history = checkpoint['metrics']

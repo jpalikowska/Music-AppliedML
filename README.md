@@ -17,20 +17,30 @@ The main objectives of the project are:
 
 ## 📦 Requirements
 
-To install all required dependencies, run:
+- Python **>=3.10**
+- Recommended: virtual environment (see below)
+
+To install all required dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
 ```
 
-## 📦 Virtual Environment
+## 🛠️ Virtual Environment
 
 We recommend creating a virtual environment first:
 
 <pre><code class="bash">
 python -m venv test_env
-source test_env/bin/activate        # Linux/macOS
-test_env\Scripts\activate.bat       # Windows
+
+# Linux/macOS:
+source venv/bin/activate
+
+# Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+
+# Windows CMD:
+venv\Scripts\activate.bat
 </code></pre>
 
 
