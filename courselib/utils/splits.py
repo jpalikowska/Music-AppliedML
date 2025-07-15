@@ -1,5 +1,7 @@
 
 import numpy as np
+import torch
+from torchvision import datasets, transforms
 
 def  train_test_split(df, training_data_fraction=0.8, class_column_name='Class', shuffle=True, return_numpy=True):
     '''
@@ -78,3 +80,28 @@ def train_test_split_np(X, Y, training_data_fraction=0.8, shuffle=True):
     Y = np.array(Y)
 
     return X[train_idx], Y[train_idx], X[test_idx], Y[test_idx]
+
+def train_test_split_images(dataset, training_data_fraction, transform_train=None):
+    """
+    Splits a dataset of images into training and validation sets.
+    If transform_train is provided, it is applied to the training subset only.
+    """
+    total_size = len(dataset)
+    train_size = int(training_data_fraction * total_size)
+    val_size = total_size - train_size
+
+    train_indices, val_indices =  torch.utils.data.random_split(range(total_size), [train_size, val_size])
+
+    dataset_root = dataset.root
+
+    if transform_train is not None:
+        train_base = datasets.ImageFolder(root=dataset_root, transform=transform_train)
+    else:
+        train_base = dataset
+
+    val_base = dataset
+
+    train_dataset = torch.utils.data.Subset(train_base, train_indices)
+    val_dataset = torch.utils.data.Subset(val_base, val_indices)
+
+    return train_dataset, val_dataset

@@ -1,5 +1,7 @@
 import os
+from torchvision import datasets, transforms
 import pandas as pd
+from torch.utils.data import DataLoader
 
 def load_or_download_csv(file_name, url, column_names=None, encoding='utf-8'):
     if os.path.exists(file_name):
@@ -58,3 +60,26 @@ def load_music_3_sec():
     file_name = 'data/features_3_sec.csv'
     df = load_csv(file_name)
     return df
+
+def load_spectrograms(config_cnn):
+    transform_train = transforms.Compose([
+        transforms.Resize((config_cnn["img_size"], config_cnn["img_size"])),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomAffine(degrees=10, translate=(0.05, 0.05)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=config_cnn["normalize_mean"], std=config_cnn["normalize_std"])
+    ])
+
+    transform_val = transforms.Compose([
+        transforms.Resize((config_cnn["img_size"], config_cnn["img_size"])),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=config_cnn["normalize_mean"], std=config_cnn["normalize_std"])
+    ])
+    dataset = datasets.ImageFolder(root=config_cnn["data_path"], transform=transform_val)
+
+    return dataset, transform_train
+
+def get_data_loaders(train_dataset, val_dataset, batch_size, shuffle=True):
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=shuffle)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+    return train_loader, val_loader
