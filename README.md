@@ -8,7 +8,7 @@ The project was developed as part of the *Applied Machine Learning* course at *L
 
 This project focuses on music genre classification using machine learning techniques.
 
-We use the [GTZAN Dataset on Kaggle](https://www.kaggle.com/datasets/snraman/gtzan-genre-collection), which contains 1000 audio tracks evenly distributed across 10 genres:  
+We use the <a href="https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification" target="_blank">GTZAN Dataset on Kaggle</a>, which contains 1000 audio tracks evenly distributed across 10 genres:  
 *blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock*
 
 The dataset provides:
@@ -32,12 +32,14 @@ Relevant result visualizations and performance metrics are presented throughout 
 
 ## 🔍 Project Structure
 
-├── courselib/ # Custom course library developed during lectures
-├── data/ # Folder containing data from the GTZAN dataset
-├── pretrained_models/ # Pretrained CNN models for faster evaluation
-├── project_notebook.ipynb # Main notebook with experiments and analysis
-├── requirements.txt # Python dependencies
-├── report.pdf # Project report
+```
+├── courselib/              # Custom course library developed during lectures
+├── data/                   # Folder containing data from the GTZAN dataset
+├── pretrained_models/      # Pretrained CNN models for faster evaluation
+├── project_notebook.ipynb  # Main notebook with experiments and analysis
+├── requirements.txt        # Python dependencies
+├── report.pdf              # Project report
+```
 
 
 ## 📦 Requirements
@@ -72,7 +74,7 @@ venv\Scripts\activate.bat
 ## 🏋️‍♂️ Training & Evaluation
 
 All training, evaluation, and result visualization steps are documented in the Jupyter notebook  
-[`project_notebook.ipynb`](./project_notebook.ipynb).
+[`project_notebook`](./project_notebook.ipynb).
 
 Running the notebook allows you to:
 
@@ -91,7 +93,7 @@ Running the notebook allows you to:
 
 We provide pretrained CNN models in the [`pretrained_models`](./pretrained_models/) folder to speed up evaluation and avoid long training times.
 
-All models were trained using the configuration defined in the `config` dictionary from the notebook.  
+All models were trained using the configuration defined in the `config_cnn` dictionary from the notebook.  
 The only variation is the **number of training epochs**, which is indicated in the filename.
 
 Additionally, the naming convention reflects how `torchvision.transforms` were applied to the dataset:
@@ -119,5 +121,5 @@ The following table summarizes the final classification accuracy of the models e
 
 All models were evaluated using accuracy scores, confusion matrices, and per-genre performance metrics.
 
-> Detailed results, including plots and evaluation curves, can be found in the [project notebook](./project_notebook.ipynb).   
+> Detailed results, including plots and evaluation curves, can be found in the [project_notebook](./project_notebook.ipynb).   
 > A PDF report is also provided, summarizing the task, chosen methods, key results, and discussion.
