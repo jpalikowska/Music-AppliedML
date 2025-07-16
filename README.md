@@ -85,7 +85,7 @@ Running the notebook allows you to:
   - Support Vector Machine (SVM) with RBF kernel (in both One-vs-Rest and One-vs-One settings)
   - Multilayer Perceptron (MLP) neural network
 - Train a Convolutional Neural Network (CNN) using mel spectrogram images  
-- Evaluate all models using accuracy, confusion matrices, and learning curves  
+- Evaluate all models using accuracy, confusion matrices, learning curves and genre-wise performance analysis
 - Load pretrained CNN models from the [`pretrained_models`](./pretrained_models/) folder
 
 > ⚠️ Training CNNs for many epochs was time-consuming, so we decided to save pretrained models to make the notebook easier to run and reproduce.
