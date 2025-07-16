@@ -43,6 +43,18 @@ class GDOptimizer(Optimizer):
             np.subtract(params[key], self.learning_rate * grads[key], out=params[key])
 
 class AdamOptimizer(Optimizer):
+    """
+    Adam optimizer: Adaptive Moment Estimation.
+
+    Combines momentum (1st moment) and adaptive scaling (2nd moment) to adjust learning rates.
+    Includes bias correction to stabilize the early steps.
+
+    Parameters:
+    - learning_rate (float): Base learning rate
+    - beta1 (float): Exponential decay rate for the 1st moment estimates (default 0.9)
+    - beta2 (float): Exponential decay rate for the 2nd moment estimates (default 0.999)
+    - eps (float): Small constant to prevent division by zero (default 1e-8)
+    """
     def __init__(self, learning_rate=0.001, beta1=0.9, beta2=0.999, eps=1e-8):
         super().__init__(learning_rate)
         self.beta1 = beta1

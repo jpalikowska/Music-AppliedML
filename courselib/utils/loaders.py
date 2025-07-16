@@ -52,11 +52,15 @@ def load_wine():
     return df 
 
 def load_music_30_sec():
+    # Loads 30-second MFCC features from the GTZAN dataset.
+    # The file must be downloaded manually and placed in the 'data/' folder.
     file_name = 'data/features_30_sec.csv'
     df = load_csv(file_name)
     return df 
 
 def load_music_3_sec():
+    # Loads 3-second MFCC segment features from the GTZAN dataset.
+    # The file must be downloaded manually and placed in the 'data/' folder.
     file_name = 'data/features_3_sec.csv'
     df = load_csv(file_name)
     return df
@@ -70,16 +74,16 @@ def load_spectrograms(config_cnn):
         transforms.Normalize(mean=config_cnn["normalize_mean"], std=config_cnn["normalize_std"])
     ])
 
-    transform_val = transforms.Compose([
+    transform_test = transforms.Compose([
         transforms.Resize((config_cnn["img_size"], config_cnn["img_size"])),
         transforms.ToTensor(),
         transforms.Normalize(mean=config_cnn["normalize_mean"], std=config_cnn["normalize_std"])
     ])
-    dataset = datasets.ImageFolder(root=config_cnn["data_path"], transform=transform_val)
+    dataset = datasets.ImageFolder(root=config_cnn["data_path"], transform=transform_test)
 
     return dataset, transform_train
 
-def get_data_loaders(train_dataset, val_dataset, batch_size, shuffle=True):
+def get_data_loaders(train_dataset, test_dataset, batch_size, shuffle=True):
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=shuffle)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size)
-    return train_loader, val_loader
+    test_loader = DataLoader(test_dataset, batch_size=batch_size)
+    return train_loader, test_loader

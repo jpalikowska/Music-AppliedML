@@ -83,14 +83,26 @@ def train_test_split_np(X, Y, training_data_fraction=0.8, shuffle=True):
 
 def train_test_split_images(dataset, training_data_fraction, transform_train=None):
     """
-    Splits a dataset of images into training and validation sets.
-    If transform_train is provided, it is applied to the training subset only.
+    Splits a dataset of images into training and test sets.
+
+    Parameters:
+    - dataset (ImageFolder): The full image dataset to be split.
+    - training_data_fraction (float): Proportion of the dataset to use for training (e.g., 0.8).
+    - transform_train (callable, optional): Transformations to apply to the training subset only.
+
+    Returns:
+    - train_dataset (Subset): Training subset with transform_train applied (if provided).
+    - test_dataset (Subset): Test subset with original transforms from the input dataset.
+
+    Notes:
+    - The split is done randomly using torch.utils.data.random_split.
+    - If transform_train is given, a new ImageFolder is created with the same root directory but using the new transform.
     """
     total_size = len(dataset)
     train_size = int(training_data_fraction * total_size)
-    val_size = total_size - train_size
+    test_size = total_size - train_size
 
-    train_indices, val_indices =  torch.utils.data.random_split(range(total_size), [train_size, val_size])
+    train_indices, test_indices =  torch.utils.data.random_split(range(total_size), [train_size, test_size])
 
     dataset_root = dataset.root
 
@@ -99,9 +111,9 @@ def train_test_split_images(dataset, training_data_fraction, transform_train=Non
     else:
         train_base = dataset
 
-    val_base = dataset
+    test_base = dataset
 
     train_dataset = torch.utils.data.Subset(train_base, train_indices)
-    val_dataset = torch.utils.data.Subset(val_base, val_indices)
+    test_dataset = torch.utils.data.Subset(test_base, test_indices)
 
-    return train_dataset, val_dataset
+    return train_dataset, test_dataset

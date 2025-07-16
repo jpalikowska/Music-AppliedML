@@ -80,13 +80,6 @@ def confusion_matrix(y_true, y_pred, num_classes=None, plot=True, **kwargs):
         return cm
     
 def plot_learning_curves(metrics_history, figsize=(6, 5)):
-    """
-    Plot learning curves for training and validation metrics.
-    
-    Parameters:
-    - metrics_history: Dictionary containing 'loss', 'val_loss', 'accuracy', 'val_accuracy'.
-    - figsize: Tuple specifying the figure size.
-    """
     fig, ax = plt.subplots(figsize=figsize)
 
     ax.plot(range(len(metrics_history['loss'])), metrics_history['loss'], label='Loss')
