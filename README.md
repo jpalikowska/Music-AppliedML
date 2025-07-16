@@ -44,7 +44,8 @@ Relevant result visualizations and performance metrics are presented throughout 
 
 ## 📦 Requirements
 
-- Python **>=3.10**
+- Python **>=3.9, <3.12**  
+  We tested the project on **Python 3.10**.
 - Recommended: virtual environment (see below)
 
 To install all required dependencies:
@@ -122,5 +123,5 @@ The following table summarizes the final classification accuracy of the models e
 
 All models were evaluated using accuracy scores, confusion matrices, and per-genre performance metrics.
 
-Detailed results, including plots and evaluation curves, can be found in the [project_notebook](./project_notebook.ipynb).   
-A PDF report is also provided, summarizing the task, chosen methods, key results, and discussion.
+Detailed results, including plots and evaluation curves, can be found in the [project_notebook](./project_notebook.ipynb).  
+A [PDF report](./report.pdf) is also provided, summarizing the task, chosen methods, key results, and discussion.
